@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover Taniti - Paradise Awaits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span>🌴</span> Taniti
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="transport.html">Getting Here</a></li>
+            <li><a href="info.html">Visitor Info</a></li>
+        </ul>
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="stay.html">Stay</a>
+    <a href="dining.html">Dining</a>
+    <a href="transport.html">Getting Here</a>
+    <a href="info.html">Visitor Info</a>
+</div>
+
+<!-- HOME PAGE -->
+<main class="page active">
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Paradise in Taniti</h1>
+            <p>A tropical island escape with sandy beaches, lush rainforests, and an active volcano waiting to be
+                explored. Your adventure begins here.</p>
+            <div class="hero-btns">
+                <a href="explore.html" class="btn btn-primary">Explore Activities</a>
+                <a href="stay.html" class="btn btn-secondary">Plan Your Stay</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <div class="container">
+        <div class="quick-links">
+            <a class="quick-link-card" href="explore.html">
+                <div class="quick-link-icon">🏖️</div>
+                <h3>Beaches</h3>
+                <p>White sandy shores around Yellow Leaf Bay</p>
+            </a>
+            <a class="quick-link-card" href="explore.html">
+                <div class="quick-link-icon">🌴</div>
+                <h3>Rainforest</h3>
+                <p>Lush tropical adventures await</p>
+            </a>
+            <a class="quick-link-card" href="explore.html">
+                <div class="quick-link-icon">🌋</div>
+                <h3>Volcano</h3>
+                <p>Visit our active volcanic wonder</p>
+            </a>
+            <a class="quick-link-card" href="explore.html">
+                <div class="quick-link-icon">🎯</div>
+                <h3>Activities</h3>
+                <p>Snorkeling, zip-lining & more</p>
+            </a>
+        </div>
+    </div>
+
+    <!-- Curated Experiences -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Curated Experiences</h2>
+                <p>Discover the perfect adventure for your travel style</p>
+            </div>
+
+            <div class="experience-grid">
+                <a href="explore.html" class="experience-card">
+                    <div class="card-image">
+                        <span>👨‍👩‍👧‍👦</span>
+                        <span class="card-badge family">Family Friendly</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Family Adventures</h3>
+                        <p>Kid-friendly activities from beach days to rainforest exploration. Perfect for making
+                            memories with your loved ones.</p>
+                        <div class="card-meta">
+                            <span>👶 All Ages</span>
+                            <span>⏱️ Half Day</span>
+                            <span>📍 Multiple Locations</span>
+                        </div>
+                        <span class="card-btn">Explore Activities</span>
+                    </div>
+                </a>
+
+                <a href="explore.html" class="experience-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #e91e63 0%, #9c27b0 100%);">
+                        <span>💑</span>
+                        <span class="card-badge romance">Romance</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Romantic Escapes</h3>
+                        <p>Sunset cruises, private beach dinners, and couples' spa treatments for the perfect honeymoon
+                            or anniversary.</p>
+                        <div class="card-meta">
+                            <span>💕 Couples</span>
+                            <span>🌅 Sunset Tours</span>
+                            <span>🍷 Fine Dining</span>
+                        </div>
+                        <span class="card-btn">Plan Romance</span>
+                    </div>
+                </a>
+
+                <a href="explore.html" class="experience-card">
+                    <div class="card-image"
+                         style="background: linear-gradient(135deg, var(--accent) 0%, #ff5722 100%);">
+                        <span>🧗</span>
+                        <span class="card-badge adventure">Adventure</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Thrill Seekers</h3>
+                        <p>Zip-line through the rainforest canopy, hike to the volcano, or dive into crystal-clear
+                            waters.</p>
+                        <div class="card-meta">
+                            <span>🔥 High Energy</span>
+                            <span>⛰️ Volcano Hikes</span>
+                            <span>🤿 Snorkeling</span>
+                        </div>
+                        <span class="card-btn">Get Adventurous</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visitor Info Highlights -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>Essential Information</h2>
+                <p>Everything you need to know before you visit</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="icon">💵</div>
+                    <h4>Currency</h4>
+                    <p>US Dollar accepted. Euros & Yen at many locations.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🔌</div>
+                    <h4>Power</h4>
+                    <p>120V outlets - same as United States.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🗣️</div>
+                    <h4>Language</h4>
+                    <p>English widely spoken in tourist areas.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🏥</div>
+                    <h4>Healthcare</h4>
+                    <p>One hospital with multilingual staff.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🛡️</div>
+                    <h4>Safety</h4>
+                    <p>Very safe island with low crime rates.</p>
+                </div>
+                <div class="info-card">
+                    <div class="icon">🌡️</div>
+                    <h4>Climate</h4>
+                    <p>Tropical year-round. Perfect beach weather.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>🌴 Discover Taniti</h4>
+            <p>A tropical paradise in the Pacific with sandy beaches, lush rainforests, and volcanic wonders.
+                Population: 20,000 friendly locals ready to welcome you.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="explore.html">Things To Do</a>
+            <a href="stay.html">Accommodations</a>
+            <a href="dining.html">Dining & Nightlife</a>
+            <a href="transport.html">Getting Here</a>
+        </div>
+        <div class="footer-col">
+            <h4>Plan Your Trip</h4>
+            <a href="info.html">Visitor Information</a>
+            <a href="transport.html">Transportation</a>
+            <a href="#">Travel Packages</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Taniti Tourism Board<br>Yellow Leaf Bay, Taniti<br>
+                info@visittaniti.com
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Visit Taniti. All rights reserved. | Taniti Tourism Board</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

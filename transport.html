@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Here & Around - Discover Taniti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span>🌴</span> Taniti
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="transport.html" class="active">Getting Here</a></li>
+            <li><a href="info.html">Visitor Info</a></li>
+        </ul>
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="stay.html">Stay</a>
+    <a href="dining.html">Dining</a>
+    <a href="transport.html">Getting Here</a>
+    <a href="info.html">Visitor Info</a>
+</div>
+
+<!-- TRANSPORTATION PAGE -->
+<main class="page active">
+    <div class="page-header">
+        <h1>Getting Here & Around</h1>
+        <p>Everything you need to know about traveling to and around Taniti</p>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="transport-tabs">
+                <div class="transport-tab active" onclick="showTransportTab(0)">✈️ By Air</div>
+                <div class="transport-tab" onclick="showTransportTab(1)">🚢 By Cruise</div>
+                <div class="transport-tab" onclick="showTransportTab(2)">🚗 Ground Transport</div>
+            </div>
+
+            <div class="transport-content" id="transportContent">
+                <div class="transport-section" data-tab="0">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--primary);">Arriving by Air</h3>
+                    <p style="margin-bottom: 20px;">Most visitors arrive at Taniti's airport, which currently
+                        accommodates small jets and propeller planes. The airport is expanding to welcome larger
+                        aircraft in the coming years.</p>
+
+                    <div class="transport-item">
+                        <div class="transport-icon">✈️</div>
+                        <div class="transport-details">
+                            <h4>Taniti International Airport</h4>
+                            <p>Located 15 minutes from Taniti City. Currently serves small jets and propeller planes.
+                                Expansion underway for larger aircraft.</p>
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🛫</div>
+                        <div class="transport-details">
+                            <h4>Flight Connections</h4>
+                            <p>Regular flights from major Pacific hub cities. Check with airlines for current schedules
+                                and booking.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transport-section" data-tab="1" style="display: none;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--primary);">Arriving by Cruise</h3>
+                    <p style="margin-bottom: 20px;">A small cruise ship docks at Yellow Leaf Bay once per week, offering
+                        a unique way to arrive on the island.</p>
+
+                    <div class="transport-item">
+                        <div class="transport-icon">🚢</div>
+                        <div class="transport-details">
+                            <h4>Yellow Leaf Bay Harbor</h4>
+                            <p>Small cruise ship visits once weekly, staying one night. The harbor is within walking
+                                distance of Taniti City attractions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transport-section" data-tab="2" style="display: none;">
+                    <h3 style="font-size: 1.5rem; margin-bottom: 20px; color: var(--primary);">Getting Around the
+                        Island</h3>
+                    <p style="margin-bottom: 20px;">Taniti offers multiple transportation options to explore the
+                        island.</p>
+
+                    <div class="transport-item">
+                        <div class="transport-icon">🚌</div>
+                        <div class="transport-details">
+                            <h4>Public Bus</h4>
+                            <p>Serves Taniti City from 5 AM - 11 PM daily. Private buses available for rest of
+                                island.</p>
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🚗</div>
+                        <div class="transport-details">
+                            <h4>Rental Cars</h4>
+                            <p>Available at the local rental agency near the airport. Recommended for families wanting
+                                flexibility.</p>
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🚕</div>
+                        <div class="transport-details">
+                            <h4>Taxis</h4>
+                            <p>Available throughout Taniti City. Convenient for short trips and airport transfers.</p>
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🚴</div>
+                        <div class="transport-details">
+                            <h4>Bike Rentals</h4>
+                            <p>Bikes and helmets available from several vendors. Helmets required by law. Great for flat
+                                areas like Taniti City.</p>
+                        </div>
+                    </div>
+                    <div class="transport-item">
+                        <div class="transport-icon">🚶</div>
+                        <div class="transport-details">
+                            <h4>Walking</h4>
+                            <p>Taniti City and Merriton Landing are flat and very walkable. Many tourists explore these
+                                areas on foot.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>🌴 Discover Taniti</h4>
+            <p>A tropical paradise in the Pacific with sandy beaches, lush rainforests, and volcanic wonders.
+                Population: 20,000 friendly locals ready to welcome you.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="explore.html">Things To Do</a>
+            <a href="stay.html">Accommodations</a>
+            <a href="dining.html">Dining & Nightlife</a>
+            <a href="transport.html">Getting Here</a>
+        </div>
+        <div class="footer-col">
+            <h4>Plan Your Trip</h4>
+            <a href="info.html">Visitor Information</a>
+            <a href="transport.html">Transportation</a>
+            <a href="#">Travel Packages</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Taniti Tourism Board<br>Yellow Leaf Bay, Taniti<br>
+                info@visittaniti.com
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Visit Taniti. All rights reserved. | Taniti Tourism Board</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

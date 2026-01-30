@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Where To Stay - Discover Taniti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span>🌴</span> Taniti
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="stay.html" class="active">Stay</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="transport.html">Getting Here</a></li>
+            <li><a href="info.html">Visitor Info</a></li>
+        </ul>
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="stay.html">Stay</a>
+    <a href="dining.html">Dining</a>
+    <a href="transport.html">Getting Here</a>
+    <a href="info.html">Visitor Info</a>
+</div>
+
+<!-- STAY PAGE -->
+<main class="page active">
+    <div class="page-header">
+        <h1>Where To Stay</h1>
+        <p>From luxury resorts to cozy bed & breakfasts - find your perfect accommodation</p>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">🏨 Hotels</button>
+                <button class="filter-btn">🏡 B&B</button>
+                <button class="filter-btn">🏠 Vacation Rentals</button>
+                <button class="filter-btn">🎒 Budget</button>
+                <div class="price-filter">
+                    <span>💰</span>
+                    <select>
+                        <option>All Prices</option>
+                        <option>Under $100/night</option>
+                        <option>$100 - $200/night</option>
+                        <option>$200 - $300/night</option>
+                        <option>$300+/night</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="accommodation-grid">
+                <div class="accommodation-card">
+                    <div class="accommodation-image">⭐</div>
+                    <div class="accommodation-content">
+                        <span class="type">Four-Star Resort</span>
+                        <h4>Taniti Grand Resort</h4>
+                        <div class="price">$299 <span>/ night</span></div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 15px;">Beachfront luxury
+                            with full amenities, pools, spa, and restaurants.</p>
+                        <a href="#" class="card-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background: linear-gradient(45deg, #81c784, #4caf50);">🏨
+                    </div>
+                    <div class="accommodation-content">
+                        <span class="type">Family Hotel</span>
+                        <h4>Yellow Leaf Inn</h4>
+                        <div class="price">$129 <span>/ night</span></div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 15px;">Family-friendly
+                            hotel steps from the beach with kids' activities.</p>
+                        <a href="#" class="card-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background: linear-gradient(45deg, #ffb74d, #ff9800);">🏡
+                    </div>
+                    <div class="accommodation-content">
+                        <span class="type">Bed & Breakfast</span>
+                        <h4>Palm Garden B&B</h4>
+                        <div class="price">$89 <span>/ night</span></div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 15px;">Charming family-run
+                            B&B with homemade breakfast included.</p>
+                        <a href="#" class="card-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background: linear-gradient(45deg, #64b5f6, #2196f3);">🏠
+                    </div>
+                    <div class="accommodation-content">
+                        <span class="type">Beach House</span>
+                        <h4>Oceanview Villa</h4>
+                        <div class="price">$245 <span>/ night</span></div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 15px;">Private beach house
+                            perfect for families or groups up to 8.</p>
+                        <a href="#" class="card-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background: linear-gradient(45deg, #ba68c8, #9c27b0);">🏢
+                    </div>
+                    <div class="accommodation-content">
+                        <span class="type">Private Condo</span>
+                        <h4>Merriton Landing Suites</h4>
+                        <div class="price">$175 <span>/ night</span></div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 15px;">Modern condos in
+                            the heart of the entertainment district.</p>
+                        <a href="#" class="card-btn">Book Now</a>
+                    </div>
+                </div>
+
+                <div class="accommodation-card">
+                    <div class="accommodation-image" style="background: linear-gradient(45deg, #78909c, #607d8b);">🎒
+                    </div>
+                    <div class="accommodation-content">
+                        <span class="type">Budget</span>
+                        <h4>Taniti Hostel</h4>
+                        <div class="price">$35 <span>/ night</span></div>
+                        <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 15px;">Clean, social
+                            hostel with dorms and private rooms available.</p>
+                        <a href="#" class="card-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3 style="font-size: 1.5rem; margin-top: 40px; margin-bottom: 20px; color: var(--primary);">Accommodation Locations</h3>
+            <div id="map" style="height: 400px; border-radius: 20px; z-index: 1;"></div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>🌴 Discover Taniti</h4>
+            <p>A tropical paradise in the Pacific with sandy beaches, lush rainforests, and volcanic wonders.
+                Population: 20,000 friendly locals ready to welcome you.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="explore.html">Things To Do</a>
+            <a href="stay.html">Accommodations</a>
+            <a href="dining.html">Dining & Nightlife</a>
+            <a href="transport.html">Getting Here</a>
+        </div>
+        <div class="footer-col">
+            <h4>Plan Your Trip</h4>
+            <a href="info.html">Visitor Information</a>
+            <a href="transport.html">Transportation</a>
+            <a href="#">Travel Packages</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Taniti Tourism Board<br>Yellow Leaf Bay, Taniti<br>
+                info@visittaniti.com
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Visit Taniti. All rights reserved. | Taniti Tourism Board</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize map centered on Suva, Fiji area (used as stand-in for fictional Taniti)
+    const map = L.map('map').setView([-18.14, 178.44], 14);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Accommodation markers positioned around Suva, Fiji
+    const accommodations = [
+        { name: 'Taniti Grand Resort', coords: [-18.135, 178.445], type: 'Four-Star Resort', price: '$299/night' },
+        { name: 'Yellow Leaf Inn', coords: [-18.142, 178.438], type: 'Family Hotel', price: '$129/night' },
+        { name: 'Palm Garden B&B', coords: [-18.138, 178.450], type: 'Bed & Breakfast', price: '$89/night' },
+        { name: 'Oceanview Villa', coords: [-18.130, 178.435], type: 'Beach House', price: '$245/night' },
+        { name: 'Merriton Landing Suites', coords: [-18.145, 178.442], type: 'Private Condo', price: '$175/night' },
+        { name: 'Taniti Hostel', coords: [-18.140, 178.448], type: 'Budget', price: '$35/night' }
+    ];
+
+    // Add markers for each accommodation
+    accommodations.forEach(acc => {
+        L.marker(acc.coords)
+            .addTo(map)
+            .bindPopup(`<strong>${acc.name}</strong><br>${acc.type}<br>${acc.price}`);
+    });
+</script>
+</body>
+</html>

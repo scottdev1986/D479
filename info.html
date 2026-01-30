@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Information - Discover Taniti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span>🌴</span> Taniti
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="dining.html">Dining</a></li>
+            <li><a href="transport.html">Getting Here</a></li>
+            <li><a href="info.html" class="active">Visitor Info</a></li>
+        </ul>
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="stay.html">Stay</a>
+    <a href="dining.html">Dining</a>
+    <a href="transport.html">Getting Here</a>
+    <a href="info.html">Visitor Info</a>
+</div>
+
+<!-- VISITOR INFO PAGE -->
+<main class="page active">
+    <div class="page-header">
+        <h1>Visitor Information</h1>
+        <p>Essential tips and practical information for your Taniti adventure</p>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="info-section">
+                <h3>Quick Facts</h3>
+                <div class="info-grid" style="background: transparent;">
+                    <div class="info-card" style="background: white; color: var(--text); border: 1px solid #eee;">
+                        <div class="icon">💵</div>
+                        <h4>Currency</h4>
+                        <p>US Dollar (primary). Euros and Yen accepted at many businesses. Credit cards widely
+                            accepted.</p>
+                    </div>
+                    <div class="info-card" style="background: white; color: var(--text); border: 1px solid #eee;">
+                        <div class="icon">🔌</div>
+                        <h4>Power Outlets</h4>
+                        <p>120 volts - same as United States. No adapter needed for US visitors.</p>
+                    </div>
+                    <div class="info-card" style="background: white; color: var(--text); border: 1px solid #eee;">
+                        <div class="icon">🗣️</div>
+                        <h4>Language</h4>
+                        <p>Many younger Tanitians speak English. Less English in rural areas and among older
+                            residents.</p>
+                    </div>
+                    <div class="info-card" style="background: white; color: var(--text); border: 1px solid #eee;">
+                        <div class="icon">🏥</div>
+                        <h4>Healthcare</h4>
+                        <p>One hospital and several clinics. Hospital has multilingual staff.</p>
+                    </div>
+                    <div class="info-card" style="background: white; color: var(--text); border: 1px solid #eee;">
+                        <div class="icon">🛡️</div>
+                        <h4>Safety</h4>
+                        <p>Violent crime is rare. Be aware of pickpocketing in tourist areas. Keep valuables secure.</p>
+                    </div>
+                    <div class="info-card" style="background: white; color: var(--text); border: 1px solid #eee;">
+                        <div class="icon">🗓️</div>
+                        <h4>Holidays</h4>
+                        <p>Taniti has many national holidays. Some attractions and restaurants close - plan
+                            accordingly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>Frequently Asked Questions</h3>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What is the best time to visit Taniti?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Taniti enjoys tropical weather year-round, making it a great destination any time. However,
+                            be aware of national holidays when some businesses may be closed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Do I need a power adapter?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you're from the United States, no adapter is needed - Taniti uses 120V outlets, the same
+                            as the US. Visitors from other countries may need an adapter.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        Is Taniti safe for families?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Taniti is very safe with rare violent crime. Just be mindful of pickpockets in busy
+                            tourist areas, as with any destination. Many activities are family-friendly.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What languages are spoken?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Many younger Tanitians speak fluent English, especially in tourist areas. English is less
+                            common in rural areas and among older residents. The hospital has multilingual staff.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What currency should I bring?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>US Dollars are the primary currency. Many businesses also accept Euros and Japanese Yen.
+                            Major credit cards are accepted at most establishments. Banks can help with currency
+                            exchange.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        What about alcohol and nightlife?
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The drinking age in Taniti is 18 (though not strictly enforced). Alcohol cannot be sold or
+                            served between midnight and 9:00 AM. There are several pubs, a microbrewery, and a new dance
+                            club.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>🌴 Discover Taniti</h4>
+            <p>A tropical paradise in the Pacific with sandy beaches, lush rainforests, and volcanic wonders.
+                Population: 20,000 friendly locals ready to welcome you.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="explore.html">Things To Do</a>
+            <a href="stay.html">Accommodations</a>
+            <a href="dining.html">Dining & Nightlife</a>
+            <a href="transport.html">Getting Here</a>
+        </div>
+        <div class="footer-col">
+            <h4>Plan Your Trip</h4>
+            <a href="info.html">Visitor Information</a>
+            <a href="transport.html">Transportation</a>
+            <a href="#">Travel Packages</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Taniti Tourism Board<br>Yellow Leaf Bay, Taniti<br>
+                info@visittaniti.com
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Visit Taniti. All rights reserved. | Taniti Tourism Board</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

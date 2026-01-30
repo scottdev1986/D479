@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining & Nightlife - Discover Taniti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Outfit:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <span>🌴</span> Taniti
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li><a href="stay.html">Stay</a></li>
+            <li><a href="dining.html" class="active">Dining</a></li>
+            <li><a href="transport.html">Getting Here</a></li>
+            <li><a href="info.html">Visitor Info</a></li>
+        </ul>
+        <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</nav>
+
+<div class="mobile-nav" id="mobileNav">
+    <a href="index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="stay.html">Stay</a>
+    <a href="dining.html">Dining</a>
+    <a href="transport.html">Getting Here</a>
+    <a href="info.html">Visitor Info</a>
+</div>
+
+<!-- DINING PAGE -->
+<main class="page active">
+    <div class="page-header">
+        <h1>Dining & Nightlife</h1>
+        <p>From fresh seafood to international cuisine - taste the flavors of Taniti</p>
+    </div>
+
+    <section class="section">
+        <div class="container">
+            <div class="filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">🐟 Local Seafood</button>
+                <button class="filter-btn">🍔 American</button>
+                <button class="filter-btn">🥢 Pan-Asian</button>
+                <button class="filter-btn">🍺 Pubs & Bars</button>
+                <button class="filter-btn">🛒 Grocery</button>
+            </div>
+
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #0288d1, #03a9f4);">
+                        <span>🐟</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fresh Catch Restaurants</h3>
+                        <p>Five local restaurants serving the freshest fish and traditional rice dishes.</p>
+                        <div class="card-meta">
+                            <span>💰 $$</span>
+                            <span>📍 Throughout Island</span>
+                        </div>
+                        <a href="#" class="card-btn">View Locations</a>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #d32f2f, #f44336);">
+                        <span>🍔</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>American-Style Dining</h3>
+                        <p>Three restaurants offering familiar favorites for visitors craving comfort food.</p>
+                        <div class="card-meta">
+                            <span>💰 $$</span>
+                            <span>📍 Taniti City</span>
+                        </div>
+                        <a href="#" class="card-btn">View Locations</a>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #7b1fa2, #9c27b0);">
+                        <span>🥢</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pan-Asian Cuisine</h3>
+                        <p>Two restaurants with diverse Asian flavors from sushi to stir-fry.</p>
+                        <div class="card-meta">
+                            <span>💰 $$-$$$</span>
+                            <span>📍 Taniti City</span>
+                        </div>
+                        <a href="#" class="card-btn">View Locations</a>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #f57c00, #ff9800);">
+                        <span>🍺</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pubs & Microbrewery</h3>
+                        <p>Local pubs including a craft microbrewery with island-inspired beers.</p>
+                        <div class="card-meta">
+                            <span>🔞 18+</span>
+                            <span>📍 Merriton Landing</span>
+                        </div>
+                        <a href="#" class="card-btn">View Locations</a>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #c2185b, #e91e63);">
+                        <span>💃</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Island Dance Club</h3>
+                        <p>Taniti's newest nightclub featuring live DJs and tropical cocktails.</p>
+                        <div class="card-meta">
+                            <span>🔞 18+</span>
+                            <span>🌙 10pm - 12am</span>
+                        </div>
+                        <a href="#" class="card-btn">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="card-image" style="background: linear-gradient(135deg, #388e3c, #4caf50);">
+                        <span>🛒</span>
+                    </div>
+                    <div class="card-content">
+                        <h3>Grocery & Convenience</h3>
+                        <p>Two supermarkets, smaller grocery stores, and a 24-hour convenience store.</p>
+                        <div class="card-meta">
+                            <span>💰 $</span>
+                            <span>⏰ Varies</span>
+                        </div>
+                        <a href="#" class="card-btn">View Locations</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="background: #fff3e0; border-left: 4px solid var(--secondary); padding: 20px 25px; border-radius: 0 12px 12px 0; margin-top: 40px;">
+                <strong>⚠️ Good to Know:</strong> Alcohol sales are restricted between midnight and 9:00 AM. The
+                drinking age on Taniti is 18.
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-grid">
+        <div class="footer-col">
+            <h4>🌴 Discover Taniti</h4>
+            <p>A tropical paradise in the Pacific with sandy beaches, lush rainforests, and volcanic wonders.
+                Population: 20,000 friendly locals ready to welcome you.</p>
+        </div>
+        <div class="footer-col">
+            <h4>Explore</h4>
+            <a href="explore.html">Things To Do</a>
+            <a href="stay.html">Accommodations</a>
+            <a href="dining.html">Dining & Nightlife</a>
+            <a href="transport.html">Getting Here</a>
+        </div>
+        <div class="footer-col">
+            <h4>Plan Your Trip</h4>
+            <a href="info.html">Visitor Information</a>
+            <a href="transport.html">Transportation</a>
+            <a href="#">Travel Packages</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-col">
+            <h4>Contact</h4>
+            <p>Taniti Tourism Board<br>Yellow Leaf Bay, Taniti<br>
+                info@visittaniti.com
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2026 Visit Taniti. All rights reserved. | Taniti Tourism Board</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
